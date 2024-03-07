@@ -1,79 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Record Counts by Decade (Histogram)</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
-  </head>
-  <body>
-    <h1>Records by Decade</h1>
-    <canvas id="decade-counts-chart"></canvas>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Record Counts by Decade (Histogram)</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+</head>
+<body>
+  <h1>Records by Decade</h1>
+  <canvas id="decade-counts-chart"></canvas>
 
-    <script>
+  <script>
+    // Fetch the JSON data from a URL
+    fetch('data/data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Assign the data to a variable
+        const jsonData = data;
 
-        // Fetch the JSON data from a URL
-        fetch('data/data.json')
-          .then(response => response.json())
-          .then(data => {
-            // Assign the data to a variable
-            const jsonData = data;
+        // Process and filter data before creating the chart
+        const chartData = processData(jsonData);
 
+        function processData(data) {
+          const decadeCounts = {};
+          for (const item of data.data) {
+            const creationFrom = parseInt(item["@template"].details.creationDateFrom, 10);
+            const decade = Math.floor(creationFrom / 10) * 10;
 
-        function countRecordsByDecade(data) {
-      if (!data || !Array.isArray(data.data)) {
-        return {};
-      }
+            // Skip entries with invalid creation dates or missing data
+            if (isNaN(creationFrom) || !decade) {
+              continue;
+            }
 
-      const decadeCounts = {};
-      for (const item of data.data) {
-        const creationFrom = parseInt(item["@template"].details.creationDateFrom, 10);
-        const decade = Math.floor(creationFrom / 10) * 10;
+            decadeCounts[decade] = (decadeCounts[decade] || 0) + 1;
+          }
 
-        decadeCounts[decade] = (decadeCounts[decade] || 0) + 1;
-      }
+          // Remove any decades with zero count (no records)
+          return Object.fromEntries(
+            Object.entries(decadeCounts).filter(([key, value]) => value > 0)
+          );
+        }
 
-      return decadeCounts;
-    }
+        const decadeCounts = chartData;
 
-    const decadeCounts = countRecordsByDecade(data);
+        // Get the canvas element for the chart
+        const ctx = document.getElementById("decade-counts-chart").getContext("2d");
 
-    // Get the canvas element for the chart
-    const ctx = document.getElementById("decade-counts-chart").getContext("2d");
-
-    // Create a new bar chart
-    new Chart(ctx, {
-      type: "bar",
-      data: {
-        labels: Object.keys(decadeCounts),
-        datasets: [
-          {
-            label: "Record Count",
-            data: Object.values(decadeCounts),
-            backgroundColor: "rgba(255, 99, 132, 0.2)",
-            borderColor: "rgba(255, 99, 132, 1)",
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                beginAtZero: true,
-              },
+        // Create a new bar chart, handling potential empty data
+        if (Object.keys(decadeCounts).length > 0) {
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: Object.keys(decadeCounts),
+              datasets: [
+                {
+                  label: "Record Count",
+                  data: Object.values(decadeCounts),
+                  backgroundColor: "rgba(219, 98, 91, 1.0)",
+                  borderColor: "rgba(255, 99, 132, 1)",
+                  borderWidth: 1,
+                },
+              ],
             },
-          ],
-        },
-      },
-    });
-});
+            options: {
+              // Combination of approaches for spacing reduction
+              scales: {
+                x: {
+                  stacked: true, // Enable stacked bars (adjusts spacing)
+                  categoryPercentage: 1, // Reduce category (label) space
+                },
+              },
+              // Other chart options...
+            },
+          });
+        } else {
+          // Display a message if no valid data is found
+          ctx.font = "16px Arial";
+          ctx.fillStyle = "red";
+          ctx.fillText("No valid data found for chart display", ctx.canvas.width / 2, ctx.canvas.height / 2);
+        }
+      });
   </script>
 
-    
+  <!--style overrides-->
+
+  <style>
+    #decade-counts-chart {
+      background:#d9d9d6;
+    }
+  </style>
+
+  <!---->
 
 
-    </body>
-    </html>
 
-
+</body>
 </html>
+
+
+
+

@@ -1,0 +1,236 @@
+{
+    "data": [
+      {
+        "@template": {
+          "details": {
+            "level": "collection",
+            "description": "Biographies of the ten women featured in the exhibition 'Women who made Milton Keynes' produced by the Milton Keynes group of The Fawcett Society. The exhibition explored the lives and contributions of ten pioneering women notable for their work and achievements in developing Milton Keynes. The project formed part of the MK50 celebrations in 2017, marking the 50th anniversary of the designation of the new town. Includes an introduction written by the group.",
+            "summary": "Biography of Women Who Made Milton Keynes (Digital Document)",
+            "title": "Biography of Women Who Made Milton Keynes",
+            "identifier": "WMK",
+            "uuid": "faa028f5-7f74-3001-b07a-16ee46b2ee06",
+            "creationDateTo": "2018",
+            "creationDateFrom": "2017",
+            "creationDate": "2017-2018",
+            "creator": "Milton Keynes Fawcett Society Group",
+            "type": "Digital Document",
+            "ciimId": "wmk-20469",
+            "group": "community",
+            "accessStatus": "Open",
+            "repository": "Milton Keynes City Discovery Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "item",
+            "description": "Biography of Margaret Powell outlining her contribution to Milton Keynes. Powell was a sheep farmer, and lived and worked at Tattenhoe Bare Farm. Upon her death, Powell left a two million pound legacy to be used for the enhancement of facilities and services for elderly and disabled people in the area, which was set up as The Margaret Powell Foundation. Milton Keynes Community Foundation look after the Margaret Powell Foundation Fund and, in recognition of her philanthropy, their building on Midsummer Boulevard has been renamed Margaret Powell House. The biography also goes into detail about the Electric Sheep sculpture at Milton Keynes Theatre.",
+            "summary": "Biography of Margaret Powell (Digital Document)",
+            "title": "Biography of Margaret Powell",
+            "identifier": "WMK/009",
+            "uuid": "f42b3081-0e6e-3fff-835b-56da06f1d06a",
+            "creationDateTo": "2017",
+            "creationDateFrom": "2017",
+            "creationDate": "2017",
+            "creator": "Gill Bryan",
+            "collection": "Biography of Women Who Made Milton Keynes (Digital Document)",
+            "collectionId": "wmk-20469",
+            "type": "Digital Document",
+            "ciimId": "wmk-20501",
+            "group": "community",
+            "accessStatus": "Open",
+            "repository": "Milton Keynes City Discovery Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "item",
+            "description": "Biography of Teresa Collard detailing her activities related to her role as Arts and Entertainments Officer with Milton Keynes Borough Council, 1975-1984. These activities include: co-founding the Music and Arts Community Action Project (MADCAP), running February Festival of the Arts, setting up the Jennie Lee Theatre at Bletchley Leisure Centre, setting up Milton Keynes' first art gallery at Milton Keynes Central Library and helping to launch the project for a major commercial theatre to be built, which is now Milton Keynes Theatre.",
+            "summary": "Biography of Teresa Collard (Digital Document)",
+            "title": "Biography of Teresa Collard",
+            "identifier": "WMK/003",
+            "uuid": "2dd0dac8-5c26-3c17-9116-74c9c4974509",
+            "creationDateTo": "2017",
+            "creationDateFrom": "2017",
+            "creationDate": "2017",
+            "creator": "Barbara Mayor",
+            "collection": "Biography of Women Who Made Milton Keynes (Digital Document)",
+            "collectionId": "wmk-20469",
+            "type": "Digital Document",
+            "ciimId": "wmk-20479",
+            "group": "community",
+            "accessStatus": "Open",
+            "repository": "Milton Keynes City Discovery Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "item",
+            "description": "Biography of Margaret Sale, detailing her involvement in the creation of the Bletchley Park Trust and the fight to preserve the wartime history of the site. The biography also includes details of her husband Tony's project to re-build the Colossus computer, and their involvement in the establishment of The National Museum of Computing.",
+            "summary": "Biography of Margaret Sale (Digital Document)",
+            "title": "Biography of Margaret Sale",
+            "identifier": "WMK/011",
+            "uuid": "78025945-c3cb-3332-81cd-77d08aadad59",
+            "creationDateTo": "2017",
+            "creationDateFrom": "2017",
+            "creationDate": "2017",
+            "creator": "Liz Whitelegg",
+            "collection": "Biography of Women Who Made Milton Keynes (Digital Document)",
+            "collectionId": "wmk-20469",
+            "type": "Digital Document",
+            "ciimId": "wmk-20508",
+            "group": "community",
+            "accessStatus": "Open",
+            "repository": "Milton Keynes City Discovery Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "item",
+            "description": "Biography of Avril Dankworth and her passion for music education, detailing her creation of the National Youth Music Camps, based at The Stables, Wavendon.",
+            "summary": "Biography of Avril Dankworth (Digital Document)",
+            "title": "Biography of Avril Dankworth",
+            "identifier": "WMK/004",
+            "uuid": "59597ddf-02d8-35f1-bbeb-4cb957f8b8d9",
+            "creationDateTo": "2017",
+            "creationDateFrom": "2017",
+            "creationDate": "2017",
+            "creator": "Margaret Gallagher",
+            "collection": "Biography of Women Who Made Milton Keynes (Digital Document)",
+            "collectionId": "wmk-20469",
+            "type": "Digital Document",
+            "ciimId": "wmk-20482",
+            "group": "community",
+            "accessStatus": "Open",
+            "repository": "Milton Keynes City Discovery Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "item",
+            "description": "Biography of Matilda Kessler detailing her activities and achievements in the development of Milton Keynes. These include her appointment as a Magistrate to the Fenny Stratford Bench, establishing the first Citizens Advice Bureau in Bletchley, co-founding the Milton Keynes Mental Health Association, being a member of the Open University Council and writing the publication 'The Story of the Magistrates Courts in Milton Keynes'.",
+            "summary": "Biography of Matilda Kessler (Digital Document)",
+            "title": "Biography of Matilda Kessler",
+            "identifier": "WMK/007",
+            "uuid": "17f976af-973e-3fcb-b0c2-22d11772f417",
+            "creationDateTo": "2017",
+            "creationDateFrom": "2017",
+            "creationDate": "2017",
+            "creator": "Gill Bryan",
+            "collection": "Biography of Women Who Made Milton Keynes (Digital Document)",
+            "collectionId": "wmk-20469",
+            "type": "Digital Document",
+            "ciimId": "wmk-20491",
+            "group": "community",
+            "accessStatus": "Open",
+            "repository": "Milton Keynes City Discovery Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "Item",
+            "description": "Audio cassette recording of Harold Ayres [of Kingston Methodist Cricket Club] discussing his memories with Richard Driver and Bob Wasley",
+            "summary": "Audio cassette recording of Harold Ayres [of Kingston Methodist Cricket Club] discussing his memories with Richard Driver and Bob Wasley",
+            "title": "Audio cassette recording of Harold Ayres [of Kingston Methodist Cricket Club] discussing his memories with Richard Driver and Bob Wasley",
+            "uuid": "7ecc79ca-9702-30a7-a351-ff5804929b12",
+            "creationDateTo": "1999",
+            "creationDateFrom": "1999",
+            "creationDate": "Mar 1999",
+            "collection": "Surrey History Centre",
+            "collectionId": "shc-0",
+            "location": "Woking",
+            "ciimId": "shc-7694-6-1-1-4",
+            "group": "community",
+            "repository": "Surrey History Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "Item",
+            "description": "Flash drive containing the following files relating to Guildford Wives' Fellowship: Photographs, including of events and past and present members, 1982-2013; Correspondence, 2002-2014; Audio interviews with former members, 2011; Scripts of talks, nd; Histories and timelines, nd; Lists of committee members, nd.",
+            "summary": "Flash drive containing the following files relating to Guildford Wives' Fellowship: Photographs, including of events and past and present members, 1982-2013; Correspondence, 2002-2014; Audio interviews with former members, 2011; Scripts of talks, nd; Histories and timelines, nd; Lists of committee members, nd",
+            "title": "Flash drive containing the following files relating to Guildford Wives' Fellowship: Photographs, including of events and past and present members, 1982-2013; Correspondence, 2002-2014; Audio interviews with former members, 2011; Scripts of talks, nd; Histories and timelines, nd; Lists of committee members, nd",
+            "uuid": "5d731409-b54c-37c3-ab36-5b0892ed85d2",
+            "creationDateTo": "2014",
+            "creationDateFrom": "1982",
+            "creationDate": "1982-2014",
+            "collection": "Surrey History Centre",
+            "collectionId": "shc-0",
+            "location": "Woking",
+            "ciimId": "shc-9361-6-16",
+            "group": "community",
+            "accessStatus": "Open",
+            "repository": "Surrey History Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "Item",
+            "description": "Oral history recording of Jeremy Ross.  Digital file in wav format",
+            "summary": "Oral history recording of Jeremy Ross",
+            "title": "Oral history recording of Jeremy Ross",
+            "uuid": "55186a9b-522a-390f-bf15-3d8bad9f5d83",
+            "creationDateTo": "2017",
+            "creationDateFrom": "2017",
+            "creationDate": "2017",
+            "collection": "Surrey History Centre",
+            "collectionId": "shc-0",
+            "location": "Woking",
+            "ciimId": "shc-9967-1-47",
+            "group": "community",
+            "repository": "Surrey History Centre"
+          }
+        }
+      },
+      {
+        "@template": {
+          "details": {
+            "level": "Series",
+            "description": "Walshe_John 2020-01-16",
+            "summary": "Walshe_John 2020-01-16",
+            "title": "Walshe_John 2020-01-16",
+            "uuid": "d9aad0a9-1621-3ba0-b23f-d7f107da1b33",
+            "creationDateTo": "2020",
+            "creationDateFrom": "2020",
+            "creationDate": "2020",
+            "note": "Interview of John Walshe for Surrey in the Great War oral history project.rnrnSubjects:rnIreland\t- Western Ireland, County Mayo, Garristown, Dublin;rnPlaces - Blackheath, West Clandon, Guildford, Windlesham, Crowthorne, Godalming, Witley Camp, Liphook, Malaya;rnFather - Military Career: Connaught Rangers, South Staffordshire Regiment, First World War, Winston Churchill; awards: CMG and Mentioned in Despatches;rnMother - Nurse, St Thomas's Hospital;rnEducation - Woodcote House School, Wellington College, King George VI visit;rnSecond World War - Chamberlain, Winston Churchill, dogfights, military in Surrey, wireless broadcasts, rationing, home life, Newlands Corner, Witley Common and Camp, air-raids, V1 rocket;rnWork - Estate Agency, Articled Clerk, Clarke Gammon Estate Agents, Army National Service - Royal Engineers;rnPeople - Winston Churchill, General Templer, King George VI",
+            "collection": "Surrey History Centre",
+            "collectionId": "shc-0",
+            "location": "Woking",
+            "ciimId": "shc-SGW-13-38",
+            "group": "community",
+            "repository": "Surrey History Centre"
+          }
+        }
+      }
+    ],
+    "errors": [
+      
+    ],
+    "aggregations": [
+      
+    ],
+    "stats": {
+      "total": 202070,
+      "providers": 1,
+      "transformations": 1,
+      "provider_latency": 9,
+      "transformation_latency": 15
+    },
+    "found": true
+  }

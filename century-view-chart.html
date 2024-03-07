@@ -1,0 +1,89 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Counts by Century (Histogram)</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+  </head>
+  <body>
+    <h1>Records by Century</h1>
+    <canvas id="century-counts-chart"></canvas>
+
+    <script>
+
+        // Fetch the JSON data from a URL
+        fetch('data/data.json')
+          .then(response => response.json())
+          .then(data => {
+            // Assign the data to a variable
+        const jsonData = data;
+    
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        const startDate = urlParams.get('start');
+        const endDate = urlParams.get('end');
+        
+        console.log(startDate);
+        console.log(endDate);
+
+
+        function countRecordsByCentury(data) {
+      if (!data || !Array.isArray(data.data)) {
+        return {};
+      }
+
+      const centuryCounts = {};
+      for (const item of data.data) {
+        const creationFrom = parseInt(item["@template"].details.creationDateFrom, 10);
+        const century = Math.floor(creationFrom / 100) * 100; // Calculate century
+
+        centuryCounts[century] = (centuryCounts[century] || 0) + 1; // Initialize count if not present, then increment
+      }
+
+      return centuryCounts;
+    }
+
+    const centuryCounts = countRecordsByCentury(data);
+
+    // Get the canvas element for the chart
+    const ctx = document.getElementById("century-counts-chart").getContext("2d");
+
+    // Create a new bar chart
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: Object.keys(centuryCounts),
+        datasets: [
+          {
+            label: "Record Count",
+            data: Object.values(centuryCounts),
+            backgroundColor: "rgba(255, 99, 132, 0.2)",
+            borderColor: "rgba(255, 99, 132, 1)",
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+      },
+    });
+});
+  </script>
+
+
+    
+
+
+    </body>
+    </html>
+
+
+</html>

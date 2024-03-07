@@ -1,4 +1,4 @@
-OHOS Timeline / Histogram prototype
+*OHOS Timeline / Histogram prototype*
 
 Technologies
 - HTML
